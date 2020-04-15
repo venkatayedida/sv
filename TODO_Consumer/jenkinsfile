@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                
-               sh 'src/com/sv/todo/todo_Consumer.java'
+               sh 'cd /Users/veyed/.jenkins/workspace/sv/TODO_Consumer/src/com/sv/todo/ javac todo_Consumer.java'
                 //sh 'mvn -B -DskipTests clean package'
             }
         }
